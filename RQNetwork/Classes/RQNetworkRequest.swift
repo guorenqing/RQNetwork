@@ -38,3 +38,30 @@ public protocol RQNetworkRequest {
     var requiresAuth: Bool { get }
 }
 
+/// 默认实现：提供通用的默认配置
+public extension RQNetworkRequest {
+    
+    /// 默认请求方法为 GET
+    var method: RQHTTPMethod { .GET }
+    
+    /// 默认不需要自定义 headers
+    var headers: [String: String]? { nil }
+    
+    /// 默认不需要自定义 query 参数
+    var queryParameters: [String: String]? { nil }
+    
+    /// 默认无请求体
+    var body: Data? { nil }
+    
+    /// 默认不使用 mock
+    var useMock: Bool { false }
+    
+    /// 默认无 mock 文件名
+    var mockFileName: String? { nil }
+    
+    /// 默认所有请求都需要权限（token）
+    var requiresAuth: Bool { true }
+}
+
+
+
