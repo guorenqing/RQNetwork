@@ -117,15 +117,14 @@ RQNetworkManager.shared.refreshTokenHandler = {
 
 ```swift
 struct UserRequest: RQNetworkRequest {
+    var userId: String
     var domainKey = RQDomainKey.userService.key
-    var path = "/users/1"
-    var method = .GET
-    var headers: [String : String]? = nil
-    var queryParameters: [String : String]? = nil
-    var body: Data? = nil
-    var useMock: Bool = false
-    var mockFileName: String? = nil
-    var requiresAuth: Bool = true
+    var path: String { "/users/\(userId)" } // 动态路径
+    var queryParameters: [String: String]? { ["userId": userId] }
+    
+    init(userId: String) {
+        self.userId = userId
+    }
 }
 ```
 
@@ -140,7 +139,7 @@ struct User: Decodable {
 }
 
 do {
-    let user: User = try await RQNetworkManager.shared.request(UserRequest(), responseType: User.self)
+    let user: User = try await RQNetworkManager.shared.request(UserRequest(userId: "12345"), responseType: User.self)
     print("✅ User:", user)
 } catch {
     print("❌ Request failed:", error)

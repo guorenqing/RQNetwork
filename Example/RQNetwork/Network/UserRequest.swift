@@ -18,13 +18,13 @@ struct User: Decodable {
 
 // 示例 Request
 struct UserRequest: RQNetworkRequest {
+    var userId: String
     var domainKey = RQDomainKey.userService.key
-    var path = "/users/1"
-    var method = RQHTTPMethod.GET
-    var headers: [String : String]? = nil
-    var queryParameters: [String : String]? = nil
-    var body: Data? = nil
-    var useMock: Bool = true
-    var mockFileName: String? = "user"
-    var requiresAuth: Bool = true
+    var path: String { "/users/\(userId)" } // 动态路径
+    var queryParameters: [String: String]? { ["userId": userId] }
+    
+    init(userId: String) {
+        self.userId = userId
+    }
 }
+
