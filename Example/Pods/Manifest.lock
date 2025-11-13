@@ -1,0 +1,16 @@
+PODS:
+  - RQNetwork (0.1.0)
+
+DEPENDENCIES:
+  - RQNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  RQNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RQNetwork: 0bdd2aae47ff5f0b577819073f8645c21eac1947
+
+PODFILE CHECKSUM: 5285d5a84c2c164b9f8e7fc7f9a9788d9c7ffd38
+
+COCOAPODS: 1.16.2

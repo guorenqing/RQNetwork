@@ -1,0 +1,6 @@
+framework module RQNetwork {
+  umbrella header "RQNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
