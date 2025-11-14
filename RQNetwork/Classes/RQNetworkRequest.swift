@@ -31,8 +31,11 @@ public protocol RQNetworkRequest {
     /// 是否使用 Mock
     var useMock: Bool { get }
     
-    /// Mock 文件名
+    /// 文件 Mock（优先级低）
     var mockFileName: String? { get }
+        
+    /// 直接返回 Mock 响应（优先级高）
+    var mockResponse: Data? { get }
     
     /// 请求是否需要 token 授权
     var requiresAuth: Bool { get }
@@ -56,8 +59,11 @@ public extension RQNetworkRequest {
     /// 默认不使用 mock
     var useMock: Bool { false }
     
-    /// 默认无 mock 文件名
+    /// 默认无文件 Mock
     var mockFileName: String? { nil }
+        
+    /// 默认无 Mock 响应
+    var mockResponse: Data? { nil }
     
     /// 默认所有请求都需要权限（token）
     var requiresAuth: Bool { true }

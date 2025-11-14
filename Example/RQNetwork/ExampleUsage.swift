@@ -50,7 +50,7 @@ struct RQExampleApp {
         
         // 发送请求
         do {
-            let user: User = try await RQNetworkManager.shared.request(UserRequest(userId: "12345"), responseType: User.self)
+            let user: User = try await RQNetworkManager.shared.send(UserRequest(userId: "12345"))
             print("✅ User info:", user)
         } catch {
             print("❌ Request failed:", error)

@@ -15,5 +15,6 @@ public enum RQNetworkError: Error {
     case statusCode(Int)             // HTTP 状态码错误
     case decodingFailed(Error)       // JSON 解析失败
     case tokenExpired                // token 失效
+    case mockDataNotFound            // mock 数据没找到
 }
 
