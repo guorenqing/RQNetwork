@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## RQNetwork
 
-Copyright (c) 2025 郭仁庆 <renqing.guo@aminer.cn>
+Copyright (c) 2025 郭仁庆 <guorenqing@sina.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -19,6 +19,8 @@ struct RQExampleApp {
         RQDomainManager.setupDomains()
         RQDomainManager.shared.setEnvironment(.develop("d1"))
         
+        // 设置全局默认超时为30秒
+        RQNetworkManager.shared.defaultTimeoutInterval = 30.0
         
         // 设置动态 headers & query
         RQNetworkManager.shared.commonHeadersProvider = {

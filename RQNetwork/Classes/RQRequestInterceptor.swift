@@ -12,8 +12,5 @@ import Foundation
 public protocol RQRequestInterceptor {
     /// 请求发送前适配 URLRequest
     func adapt(_ request: URLRequest) async throws -> URLRequest
-    
-    /// 请求失败时是否重试
-    func retry(_ request: URLRequest, dueTo error: Error) async -> Bool
 }
 

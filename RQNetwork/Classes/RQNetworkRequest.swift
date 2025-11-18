@@ -9,7 +9,7 @@ import Foundation
 
 /// 网络请求协议
 /// 每个请求只需要定义 domainKey、path、method、可选 headers/query/body
-public protocol RQNetworkRequest {
+public protocol RQNetworkRequest: Sendable {
     /// 域名标识，通过 DomainManager 获取 baseURL
     var domainKey: String { get }
     
@@ -39,6 +39,12 @@ public protocol RQNetworkRequest {
     
     /// 请求是否需要 token 授权
     var requiresAuth: Bool { get }
+    
+    /// 请求超时时间（秒），nil 使用网络库默认
+    var timeoutInterval: TimeInterval? { get }
+    
+    /// 重试配置
+    var retryConfiguration: RQRetryConfiguration? { get }
 }
 
 /// 默认实现：提供通用的默认配置
@@ -67,6 +73,12 @@ public extension RQNetworkRequest {
     
     /// 默认所有请求都需要权限（token）
     var requiresAuth: Bool { true }
+    
+    /// 请求超时时间（秒），nil 使用网络库默认
+    var timeoutInterval: TimeInterval? { nil }
+    
+    /// 默认不重试（走NetworkManager重试策略）
+    var retryConfiguration: RQRetryConfiguration? { nil }
 }
 
 

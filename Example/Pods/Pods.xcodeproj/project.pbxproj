@@ -3,105 +3,113 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		024BC000980419F3D77A33C7534F1B5D /* Pods-RQNetwork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF59FB5B2FE58EB6485C9F3BF4ACF15 /* Pods-RQNetwork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F545E988CA9A47B404AAC85A5B10EEE /* RQNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B618842219877AD36ABB57360A7BBDCE /* RQNetwork-dummy.m */; };
-		3890C0581A8D1131337A09CF0F78534F /* RQHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DB631152319EDA97A581DE3C1C8BF /* RQHTTPMethod.swift */; };
-		4CBC253696E5DEC35249CB096BD29374 /* RQDomainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80272D951F7F362041284F3180CE962E /* RQDomainManager.swift */; };
-		57DC8200474E1C7C3650D569202DC1E9 /* RQNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AFD0A58D08B66311EBBE7E6B2FF4E /* RQNetworkError.swift */; };
-		870407B7538D5BF25C573965F1A279AC /* RQNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E8AF41D37FB91F56B911B7B7F01FA /* RQNetworkManager.swift */; };
-		94B0EA93FF40AF175CEE842FEB8F4880 /* RQRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF3C98100900C481180BE5A8D877B3 /* RQRequestInterceptor.swift */; };
+		10B15DD612BB56C178C8F1F84C623B30 /* RQNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C58E1F3A7818529A28415B0F5AF626A /* RQNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		166121CB5EA97B26F930C409EAD35047 /* RQSSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4855DF05BC668C160C181F188AB91FD /* RQSSE.swift */; };
+		17F29EC13BED516EF723432FD0925882 /* RQNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA98A64534F7478EDCCF0F841F188A3 /* RQNetworkManager.swift */; };
+		1A787A9E3C7BDA17C26B2FF6F3285DBB /* RQDomainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DCE4637AC5E23E3FD7004926EC9BA /* RQDomainManager.swift */; };
+		2B2DFAEC5CF92E8B336F15D00B9306D6 /* RQEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C2E4304C5009B6FE1D1BAEAECF294 /* RQEnvironment.swift */; };
+		30512DCD5D0FD53EF56BB94C616B5879 /* RQFileDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DB46BFBB7F551EE316D3AC97F71DF /* RQFileDownload.swift */; };
+		31577B834674CECC0976FA7B682E376B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		3E94A12A29B027FBFBFBEFD74C0175E1 /* RQRetryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0E60CA9C3D4312E9DA4461E4891CE /* RQRetryManager.swift */; };
+		4F7E82FA9931D9491A14932F4B91A45E /* RQRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40567EC6DD8E035EFDD05D3E927E727E /* RQRequestInterceptor.swift */; };
+		88BA221F86F4C6709F84E81BB5301E76 /* RQNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C111CFEC595A854C745550A77F70590 /* RQNetwork-dummy.m */; };
 		9EBC28ACEBE373CEA1509F0F4643077A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		A0154208AC489665D19E5C8E6E95E5F9 /* RQNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193ECE72A171D8E434766838277D4D8 /* RQNetworkRequest.swift */; };
 		AF2A514130E40E81A28298955FDC695C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		B2A332DB6CD595DC086C1E1CCC38AC4C /* Pods-RQNetwork_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A849EA13583765EAC5CC36A9CF1AB /* Pods-RQNetwork_Example-dummy.m */; };
-		B6477C845D33C0FF0C0072C2E9661D74 /* RQNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092B6575CAA9021694B0BE14B108C6C4 /* RQNetworkRequest.swift */; };
-		B84820BD83D0EBF9748A37C2445A2837 /* RQEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA10FFF7315D4F65CFF9EE6DA9FAAC9 /* RQEnvironment.swift */; };
-		D948D8F32D2C7CCDA50A51E2D3FD8772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		D979C2B4F9B61A4D80AB0076C90945BE /* Data+Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE12F84983BFFD8DDFC4AF0DFF07B5 /* Data+Multipart.swift */; };
-		DDBB41089967AE2F2F8C9417311A737F /* RQNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 560C4C413CEF3DEBCBCA4F976509D8E9 /* RQNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE36EF720B918FFCE9451206332128F0 /* RQResponseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA5ACDF3CD9C6B0272FA68B8BA4E77 /* RQResponseInterceptor.swift */; };
+		C4722FA730F3DDB2FCE0217B8C7A04F0 /* RQNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFD3F7627AEB1C7BA0788A0B55A087 /* RQNetworkError.swift */; };
+		C5B071C728DB3C9240257457A63E0B84 /* RQHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A22318BF8369753E1C2905D1C86770 /* RQHTTPMethod.swift */; };
+		E8A7223ECEAB70EFB883EC2AB8E168D9 /* RQRetryConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551366E1777C2693F43A0F9BEA651C29 /* RQRetryConfiguration.swift */; };
+		EC443CDEA6076B330EFCBD05ECE6F380 /* RQResponseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E18CB6BB8F8EF8C50341BC4B74D98 /* RQResponseInterceptor.swift */; };
+		EE06CEE0328C938FAA7733431C756BF0 /* RQFileUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E327DE8EB31C79B5917037F994DA3 /* RQFileUpload.swift */; };
 		EF4CF5AEEEB0465AB9A7CD4396BF4BF8 /* Pods-RQNetwork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D734896DD3959193329C5933E18A358C /* Pods-RQNetwork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB5A50508E9B31364C528FD5A10E9F90 /* Pods-RQNetwork_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0B7851E7DD6696188C05088D63BFA /* Pods-RQNetwork_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1FF70708385AD1C6525197740FF5807 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F885BD1C009647AA9B5EDB2631A03154;
-			remoteInfo = "Pods-RQNetwork_Example";
-		};
-		AD83A4544A654D1E86A7EDCC363EF40E /* PBXContainerItemProxy */ = {
+		270E38B3488F7A4FBC217ABD54BD4F0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 02DD11576D74A8177FDFAD2DDD233764;
 			remoteInfo = RQNetwork;
 		};
+		8074C446CD00AC75DF16FFBB01EE6761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F885BD1C009647AA9B5EDB2631A03154;
+			remoteInfo = "Pods-RQNetwork_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022DB631152319EDA97A581DE3C1C8BF /* RQHTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQHTTPMethod.swift; path = RQNetwork/Classes/RQHTTPMethod.swift; sourceTree = "<group>"; };
-		02B2C4736501FA7284EBD4DFAB894A17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		092B6575CAA9021694B0BE14B108C6C4 /* RQNetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkRequest.swift; path = RQNetwork/Classes/RQNetworkRequest.swift; sourceTree = "<group>"; };
-		0AAC178E47D2E535B3CA173B38ACBCFB /* RQNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RQNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		0396046DB6E52C6CB67417E0D4AEC6DE /* RQNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RQNetwork.release.xcconfig; sourceTree = "<group>"; };
+		0C111CFEC595A854C745550A77F70590 /* RQNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RQNetwork-dummy.m"; sourceTree = "<group>"; };
+		0C58E1F3A7818529A28415B0F5AF626A /* RQNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RQNetwork-umbrella.h"; sourceTree = "<group>"; };
+		10A507E90A00061179CF3E0B0E82F4BD /* RQNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RQNetwork-Info.plist"; sourceTree = "<group>"; };
+		13A93B9C0B60BFE7C9352FD252A6DD4E /* RQNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RQNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		1AF0E60CA9C3D4312E9DA4461E4891CE /* RQRetryManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQRetryManager.swift; path = RQNetwork/Classes/RQRetryManager.swift; sourceTree = "<group>"; };
 		1E9D3626D59895534B5F76D23370BD2F /* Pods-RQNetwork_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RQNetwork_Example-Info.plist"; sourceTree = "<group>"; };
+		225E18CB6BB8F8EF8C50341BC4B74D98 /* RQResponseInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQResponseInterceptor.swift; path = RQNetwork/Classes/RQResponseInterceptor.swift; sourceTree = "<group>"; };
 		25316684183B8D1AD8F9985AFC3EB49C /* Pods-RQNetwork_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RQNetwork_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		26A22318BF8369753E1C2905D1C86770 /* RQHTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQHTTPMethod.swift; path = RQNetwork/Classes/RQHTTPMethod.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A059D1923C1FD5727FFDE96DA3A3C56 /* RQNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RQNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BD5E759B5CE71F98F3C41509D644CFC /* Pods-RQNetwork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RQNetwork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40567EC6DD8E035EFDD05D3E927E727E /* RQRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQRequestInterceptor.swift; path = RQNetwork/Classes/RQRequestInterceptor.swift; sourceTree = "<group>"; };
 		419D4211BDB346C4888F7C03704D7D60 /* Pods-RQNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RQNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4BA98A64534F7478EDCCF0F841F188A3 /* RQNetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkManager.swift; path = RQNetwork/Classes/RQNetworkManager.swift; sourceTree = "<group>"; };
 		511A0783BE6D93A195DBE0BDF582C291 /* Pods-RQNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RQNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		51FA5ACDF3CD9C6B0272FA68B8BA4E77 /* RQResponseInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQResponseInterceptor.swift; path = RQNetwork/Classes/RQResponseInterceptor.swift; sourceTree = "<group>"; };
 		5254A5D50479C2ED9D4B369BBD7FDC38 /* Pods-RQNetwork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RQNetwork_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5480C1DBFC1347869DB1ACB704D006B9 /* RQNetwork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RQNetwork; path = RQNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		560C4C413CEF3DEBCBCA4F976509D8E9 /* RQNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RQNetwork-umbrella.h"; sourceTree = "<group>"; };
-		56297606ED31F7924776524DD16C2F44 /* RQNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RQNetwork-prefix.pch"; sourceTree = "<group>"; };
-		64CE12F84983BFFD8DDFC4AF0DFF07B5 /* Data+Multipart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Multipart.swift"; sourceTree = "<group>"; };
-		770B68CE39EEEC1973515AB0F71D1D0E /* RQNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RQNetwork.release.xcconfig; sourceTree = "<group>"; };
-		7D6AFD0A58D08B66311EBBE7E6B2FF4E /* RQNetworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkError.swift; path = RQNetwork/Classes/RQNetworkError.swift; sourceTree = "<group>"; };
-		7FBF3C98100900C481180BE5A8D877B3 /* RQRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQRequestInterceptor.swift; path = RQNetwork/Classes/RQRequestInterceptor.swift; sourceTree = "<group>"; };
-		80272D951F7F362041284F3180CE962E /* RQDomainManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQDomainManager.swift; path = RQNetwork/Classes/RQDomainManager.swift; sourceTree = "<group>"; };
+		551366E1777C2693F43A0F9BEA651C29 /* RQRetryConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQRetryConfiguration.swift; path = RQNetwork/Classes/RQRetryConfiguration.swift; sourceTree = "<group>"; };
+		611C2E4304C5009B6FE1D1BAEAECF294 /* RQEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQEnvironment.swift; path = RQNetwork/Classes/RQEnvironment.swift; sourceTree = "<group>"; };
+		6193ECE72A171D8E434766838277D4D8 /* RQNetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkRequest.swift; path = RQNetwork/Classes/RQNetworkRequest.swift; sourceTree = "<group>"; };
+		7BEFD3F7627AEB1C7BA0788A0B55A087 /* RQNetworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkError.swift; path = RQNetwork/Classes/RQNetworkError.swift; sourceTree = "<group>"; };
 		805BAB5F1AF56136346A797A9424A3BF /* Pods-RQNetwork_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RQNetwork_Example"; path = Pods_RQNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88DED9DA9434827ECA1F01C50CE1A24C /* RQNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RQNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		89D9B04B22343E4EA66A532289FFE235 /* RQNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RQNetwork.modulemap; sourceTree = "<group>"; };
-		8AA10FFF7315D4F65CFF9EE6DA9FAAC9 /* RQEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQEnvironment.swift; path = RQNetwork/Classes/RQEnvironment.swift; sourceTree = "<group>"; };
+		8AE7EE30D29F2AB62A9D77F893E3B834 /* RQNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RQNetwork.modulemap; sourceTree = "<group>"; };
 		8E4C1A78D3E52FE2B2C6ACD584043665 /* Pods-RQNetwork_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RQNetwork_Tests.modulemap"; sourceTree = "<group>"; };
 		947A849EA13583765EAC5CC36A9CF1AB /* Pods-RQNetwork_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RQNetwork_Example-dummy.m"; sourceTree = "<group>"; };
 		9AB0B7851E7DD6696188C05088D63BFA /* Pods-RQNetwork_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RQNetwork_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A299DF60D936FC1FCB8ADA1F372753DC /* Pods-RQNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RQNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A4855DF05BC668C160C181F188AB91FD /* RQSSE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQSSE.swift; path = RQNetwork/Classes/RQSSE.swift; sourceTree = "<group>"; };
 		AFCF0FA7DA493137042DC28A92B2B06F /* Pods-RQNetwork_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RQNetwork_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B618842219877AD36ABB57360A7BBDCE /* RQNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RQNetwork-dummy.m"; sourceTree = "<group>"; };
+		B63DB46BFBB7F551EE316D3AC97F71DF /* RQFileDownload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQFileDownload.swift; path = RQNetwork/Classes/RQFileDownload.swift; sourceTree = "<group>"; };
+		B74DCE4637AC5E23E3FD7004926EC9BA /* RQDomainManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQDomainManager.swift; path = RQNetwork/Classes/RQDomainManager.swift; sourceTree = "<group>"; };
+		BC7FA276ED9916D714EDE2AE72EAEB95 /* RQNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RQNetwork-prefix.pch"; sourceTree = "<group>"; };
 		BCDE54CD5463530AD962DFA9F22B38EC /* Pods-RQNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RQNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF59FB5B2FE58EB6485C9F3BF4ACF15 /* Pods-RQNetwork_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RQNetwork_Example-umbrella.h"; sourceTree = "<group>"; };
-		BF29AC90A54D7F01E871E0887F59C3D9 /* RQNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RQNetwork-Info.plist"; sourceTree = "<group>"; };
 		C051E1C8B2A021DA3AA6F1D2B6D83908 /* Pods-RQNetwork_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RQNetwork_Tests-Info.plist"; sourceTree = "<group>"; };
 		C7F267709CD462E1FC7356D82FFB9D61 /* Pods-RQNetwork_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RQNetwork_Tests"; path = Pods_RQNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2548DFE40FD825794F20A38B92D21E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D43E13A6CEBD578D169A9F1E2463D0B5 /* Pods-RQNetwork_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RQNetwork_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D734896DD3959193329C5933E18A358C /* Pods-RQNetwork_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RQNetwork_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E0EA6DC1003E548357E7D06DD5275B78 /* Pods-RQNetwork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RQNetwork_Example.modulemap"; sourceTree = "<group>"; };
-		FE4E8AF41D37FB91F56B911B7B7F01FA /* RQNetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQNetworkManager.swift; path = RQNetwork/Classes/RQNetworkManager.swift; sourceTree = "<group>"; };
+		E92E327DE8EB31C79B5917037F994DA3 /* RQFileUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RQFileUpload.swift; path = RQNetwork/Classes/RQFileUpload.swift; sourceTree = "<group>"; };
+		F019F06CEE5281D99FCB5588C02CAC91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FBF19EEAD8E94FB3E86F315D8041DE9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10B377C538B4C1AF1E99BAB72FA817DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31577B834674CECC0976FA7B682E376B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		168D91F1987AC8A0CB8AE7AE2EE667C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF2A514130E40E81A28298955FDC695C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53CDDE27E48E50C0C62B125CE72C48AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D948D8F32D2C7CCDA50A51E2D3FD8772 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,24 +134,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		09DB61D773810113FAF30C7731718C8B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D2548DFE40FD825794F20A38B92D21E5 /* LICENSE */,
-				02B2C4736501FA7284EBD4DFAB894A17 /* README.md */,
-				88DED9DA9434827ECA1F01C50CE1A24C /* RQNetwork.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		165858E76F13747EEF55FF4753492D94 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E6C917583791ED41C6F13E8F12C96CA7 /* RQNetwork */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		265A86E3BD60FC24BCEAD760E6798244 /* Pods-RQNetwork_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,15 +151,6 @@
 			path = "Target Support Files/Pods-RQNetwork_Example";
 			sourceTree = "<group>";
 		};
-		280FCAD184BFCF9A5EEB3028C608C9D2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				64CE12F84983BFFD8DDFC4AF0DFF07B5 /* Data+Multipart.swift */,
-			);
-			name = Extensions;
-			path = RQNetwork/Classes/Extensions;
-			sourceTree = "<group>";
-		};
 		61A29903C1D99AFE39907AA8496F9F8C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,16 +160,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6A874753D22E7F1F831E8EC6C4A2A717 /* Support Files */ = {
+		6509A0327330925ADA7C78473FA7B733 /* RQNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				89D9B04B22343E4EA66A532289FFE235 /* RQNetwork.modulemap */,
-				B618842219877AD36ABB57360A7BBDCE /* RQNetwork-dummy.m */,
-				BF29AC90A54D7F01E871E0887F59C3D9 /* RQNetwork-Info.plist */,
-				56297606ED31F7924776524DD16C2F44 /* RQNetwork-prefix.pch */,
-				560C4C413CEF3DEBCBCA4F976509D8E9 /* RQNetwork-umbrella.h */,
-				0AAC178E47D2E535B3CA173B38ACBCFB /* RQNetwork.debug.xcconfig */,
-				770B68CE39EEEC1973515AB0F71D1D0E /* RQNetwork.release.xcconfig */,
+				B74DCE4637AC5E23E3FD7004926EC9BA /* RQDomainManager.swift */,
+				611C2E4304C5009B6FE1D1BAEAECF294 /* RQEnvironment.swift */,
+				B63DB46BFBB7F551EE316D3AC97F71DF /* RQFileDownload.swift */,
+				E92E327DE8EB31C79B5917037F994DA3 /* RQFileUpload.swift */,
+				26A22318BF8369753E1C2905D1C86770 /* RQHTTPMethod.swift */,
+				7BEFD3F7627AEB1C7BA0788A0B55A087 /* RQNetworkError.swift */,
+				4BA98A64534F7478EDCCF0F841F188A3 /* RQNetworkManager.swift */,
+				6193ECE72A171D8E434766838277D4D8 /* RQNetworkRequest.swift */,
+				40567EC6DD8E035EFDD05D3E927E727E /* RQRequestInterceptor.swift */,
+				225E18CB6BB8F8EF8C50341BC4B74D98 /* RQResponseInterceptor.swift */,
+				551366E1777C2693F43A0F9BEA651C29 /* RQRetryConfiguration.swift */,
+				1AF0E60CA9C3D4312E9DA4461E4891CE /* RQRetryManager.swift */,
+				A4855DF05BC668C160C181F188AB91FD /* RQSSE.swift */,
+				FCAE5C96FAEC432312ABABCADCF000D7 /* Pod */,
+				BB1C627E5C6D2F2E3CB105FA6AB2C5E6 /* Support Files */,
+			);
+			name = RQNetwork;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BB1C627E5C6D2F2E3CB105FA6AB2C5E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AE7EE30D29F2AB62A9D77F893E3B834 /* RQNetwork.modulemap */,
+				0C111CFEC595A854C745550A77F70590 /* RQNetwork-dummy.m */,
+				10A507E90A00061179CF3E0B0E82F4BD /* RQNetwork-Info.plist */,
+				BC7FA276ED9916D714EDE2AE72EAEB95 /* RQNetwork-prefix.pch */,
+				0C58E1F3A7818529A28415B0F5AF626A /* RQNetwork-umbrella.h */,
+				13A93B9C0B60BFE7C9352FD252A6DD4E /* RQNetwork.debug.xcconfig */,
+				0396046DB6E52C6CB67417E0D4AEC6DE /* RQNetwork.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/RQNetwork";
@@ -198,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				165858E76F13747EEF55FF4753492D94 /* Development Pods */,
+				F6197287D5E0FC76E8F5AA8EB50FBA09 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				009F67DE21676B0A23FCBE411AD6BCE9 /* Products */,
 				61A29903C1D99AFE39907AA8496F9F8C /* Targets Support Files */,
@@ -237,33 +241,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E6C917583791ED41C6F13E8F12C96CA7 /* RQNetwork */ = {
+		F6197287D5E0FC76E8F5AA8EB50FBA09 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80272D951F7F362041284F3180CE962E /* RQDomainManager.swift */,
-				8AA10FFF7315D4F65CFF9EE6DA9FAAC9 /* RQEnvironment.swift */,
-				022DB631152319EDA97A581DE3C1C8BF /* RQHTTPMethod.swift */,
-				7D6AFD0A58D08B66311EBBE7E6B2FF4E /* RQNetworkError.swift */,
-				FE4E8AF41D37FB91F56B911B7B7F01FA /* RQNetworkManager.swift */,
-				092B6575CAA9021694B0BE14B108C6C4 /* RQNetworkRequest.swift */,
-				7FBF3C98100900C481180BE5A8D877B3 /* RQRequestInterceptor.swift */,
-				51FA5ACDF3CD9C6B0272FA68B8BA4E77 /* RQResponseInterceptor.swift */,
-				280FCAD184BFCF9A5EEB3028C608C9D2 /* Extensions */,
-				09DB61D773810113FAF30C7731718C8B /* Pod */,
-				6A874753D22E7F1F831E8EC6C4A2A717 /* Support Files */,
+				6509A0327330925ADA7C78473FA7B733 /* RQNetwork */,
 			);
-			name = RQNetwork;
-			path = ../..;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FCAE5C96FAEC432312ABABCADCF000D7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F019F06CEE5281D99FCB5588C02CAC91 /* LICENSE */,
+				FBF19EEAD8E94FB3E86F315D8041DE9D /* README.md */,
+				3A059D1923C1FD5727FFDE96DA3A3C56 /* RQNetwork.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A6BDC6672FDC2C0CB95317E853F6B22 /* Headers */ = {
+		5FD6C03556DD3CADEE8DEEE21066C7C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBB41089967AE2F2F8C9417311A737F /* RQNetwork-umbrella.h in Headers */,
+				10B15DD612BB56C178C8F1F84C623B30 /* RQNetwork-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +291,12 @@
 /* Begin PBXNativeTarget section */
 		02DD11576D74A8177FDFAD2DDD233764 /* RQNetwork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65CBC81BFE35D455992179E509AC6166 /* Build configuration list for PBXNativeTarget "RQNetwork" */;
+			buildConfigurationList = B9064A7985A5BBE1293378608A883442 /* Build configuration list for PBXNativeTarget "RQNetwork" */;
 			buildPhases = (
-				3A6BDC6672FDC2C0CB95317E853F6B22 /* Headers */,
-				5DDAFF1B55F9CCB7C38D4F38A19F9410 /* Sources */,
-				53CDDE27E48E50C0C62B125CE72C48AE /* Frameworks */,
-				C3C4F762B7D63BAB1DD763FD54F1CBAD /* Resources */,
+				5FD6C03556DD3CADEE8DEEE21066C7C1 /* Headers */,
+				8C6FE4F6E6CCCDFC8AEF0521CB22C6AC /* Sources */,
+				10B377C538B4C1AF1E99BAB72FA817DE /* Frameworks */,
+				D243F6E13118154278C95620F12FC0CE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -316,7 +319,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3597266425F6461AABD64C0F26DC795A /* PBXTargetDependency */,
+				32A14BB6A41DFDA93D7C03D1A2634E40 /* PBXTargetDependency */,
 			);
 			name = "Pods-RQNetwork_Tests";
 			productName = Pods_RQNetwork_Tests;
@@ -335,7 +338,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				17B9FA7EC7692E5111364C6ADF59947B /* PBXTargetDependency */,
+				8EC879C3E1ACDF7AEF7A1E5E4E13013C /* PBXTargetDependency */,
 			);
 			name = "Pods-RQNetwork_Example";
 			productName = Pods_RQNetwork_Example;
@@ -352,7 +355,7 @@
 				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -374,13 +377,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C3C4F762B7D63BAB1DD763FD54F1CBAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C454119EA2F7CE8736798072296C4521 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +385,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C98ECB7D4F63E94EE8DAE83CBD75AFBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D243F6E13118154278C95620F12FC0CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,20 +409,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DDAFF1B55F9CCB7C38D4F38A19F9410 /* Sources */ = {
+		8C6FE4F6E6CCCDFC8AEF0521CB22C6AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D979C2B4F9B61A4D80AB0076C90945BE /* Data+Multipart.swift in Sources */,
-				4CBC253696E5DEC35249CB096BD29374 /* RQDomainManager.swift in Sources */,
-				B84820BD83D0EBF9748A37C2445A2837 /* RQEnvironment.swift in Sources */,
-				3890C0581A8D1131337A09CF0F78534F /* RQHTTPMethod.swift in Sources */,
-				1F545E988CA9A47B404AAC85A5B10EEE /* RQNetwork-dummy.m in Sources */,
-				57DC8200474E1C7C3650D569202DC1E9 /* RQNetworkError.swift in Sources */,
-				870407B7538D5BF25C573965F1A279AC /* RQNetworkManager.swift in Sources */,
-				B6477C845D33C0FF0C0072C2E9661D74 /* RQNetworkRequest.swift in Sources */,
-				94B0EA93FF40AF175CEE842FEB8F4880 /* RQRequestInterceptor.swift in Sources */,
-				DE36EF720B918FFCE9451206332128F0 /* RQResponseInterceptor.swift in Sources */,
+				1A787A9E3C7BDA17C26B2FF6F3285DBB /* RQDomainManager.swift in Sources */,
+				2B2DFAEC5CF92E8B336F15D00B9306D6 /* RQEnvironment.swift in Sources */,
+				30512DCD5D0FD53EF56BB94C616B5879 /* RQFileDownload.swift in Sources */,
+				EE06CEE0328C938FAA7733431C756BF0 /* RQFileUpload.swift in Sources */,
+				C5B071C728DB3C9240257457A63E0B84 /* RQHTTPMethod.swift in Sources */,
+				88BA221F86F4C6709F84E81BB5301E76 /* RQNetwork-dummy.m in Sources */,
+				C4722FA730F3DDB2FCE0217B8C7A04F0 /* RQNetworkError.swift in Sources */,
+				17F29EC13BED516EF723432FD0925882 /* RQNetworkManager.swift in Sources */,
+				A0154208AC489665D19E5C8E6E95E5F9 /* RQNetworkRequest.swift in Sources */,
+				4F7E82FA9931D9491A14932F4B91A45E /* RQRequestInterceptor.swift in Sources */,
+				EC443CDEA6076B330EFCBD05ECE6F380 /* RQResponseInterceptor.swift in Sources */,
+				E8A7223ECEAB70EFB883EC2AB8E168D9 /* RQRetryConfiguration.swift in Sources */,
+				3E94A12A29B027FBFBFBEFD74C0175E1 /* RQRetryManager.swift in Sources */,
+				166121CB5EA97B26F930C409EAD35047 /* RQSSE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,27 +441,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17B9FA7EC7692E5111364C6ADF59947B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RQNetwork;
-			target = 02DD11576D74A8177FDFAD2DDD233764 /* RQNetwork */;
-			targetProxy = AD83A4544A654D1E86A7EDCC363EF40E /* PBXContainerItemProxy */;
-		};
-		3597266425F6461AABD64C0F26DC795A /* PBXTargetDependency */ = {
+		32A14BB6A41DFDA93D7C03D1A2634E40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RQNetwork_Example";
 			target = F885BD1C009647AA9B5EDB2631A03154 /* Pods-RQNetwork_Example */;
-			targetProxy = A1FF70708385AD1C6525197740FF5807 /* PBXContainerItemProxy */;
+			targetProxy = 8074C446CD00AC75DF16FFBB01EE6761 /* PBXContainerItemProxy */;
+		};
+		8EC879C3E1ACDF7AEF7A1E5E4E13013C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RQNetwork;
+			target = 02DD11576D74A8177FDFAD2DDD233764 /* RQNetwork */;
+			targetProxy = 270E38B3488F7A4FBC217ABD54BD4F0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FCF38D70642A211E80B6FD8FD4AB39C /* Release */ = {
+		26AB94BAAD2E60211CD3339DC5E2A863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 511A0783BE6D93A195DBE0BDF582C291 /* Pods-RQNetwork_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -469,7 +475,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Tests/Pods-RQNetwork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Tests/Pods-RQNetwork_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -486,47 +496,10 @@
 			};
 			name = Release;
 		};
-		22520290B69E78569EE49DCB5ACA00C9 /* Debug */ = {
+		4810AF13A20C5A0BC370A40FADAFFAE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A299DF60D936FC1FCB8ADA1F372753DC /* Pods-RQNetwork_Example.debug.xcconfig */;
+			baseConfigurationReference = 13A93B9C0B60BFE7C9352FD252A6DD4E /* RQNetwork.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		75AC53B02B05DBC40913F7487D906F98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AAC178E47D2E535B3CA173B38ACBCFB /* RQNetwork.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,7 +516,11 @@
 				INFOPLIST_FILE = "Target Support Files/RQNetwork/RQNetwork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/RQNetwork/RQNetwork.modulemap";
 				PRODUCT_MODULE_NAME = RQNetwork;
 				PRODUCT_NAME = RQNetwork;
@@ -557,6 +534,85 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		51C7D9FAA53B2CB60C721DA9A85854A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A299DF60D936FC1FCB8ADA1F372753DC /* Pods-RQNetwork_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6348127E3BD62F79A363CA7166F8D36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419D4211BDB346C4888F7C03704D7D60 /* Pods-RQNetwork_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -686,12 +742,11 @@
 			};
 			name = Release;
 		};
-		A51B99B1795BE715ACFE737C07E7F54D /* Debug */ = {
+		A55EF733CBF672808D8B503FD96B964B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDE54CD5463530AD962DFA9F22B38EC /* Pods-RQNetwork_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -706,7 +761,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Tests/Pods-RQNetwork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Tests/Pods-RQNetwork_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -722,48 +781,10 @@
 			};
 			name = Debug;
 		};
-		C59DC869A054EE5EFB4E47C336FF4754 /* Release */ = {
+		FBEFEC7AEE2FF01AF70B863B9B74F055 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419D4211BDB346C4888F7C03704D7D60 /* Pods-RQNetwork_Example.release.xcconfig */;
+			baseConfigurationReference = 0396046DB6E52C6CB67417E0D4AEC6DE /* RQNetwork.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RQNetwork_Example/Pods-RQNetwork_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FAF2926965FF7590E076DDA26B7C6110 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 770B68CE39EEEC1973515AB0F71D1D0E /* RQNetwork.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -780,7 +801,11 @@
 				INFOPLIST_FILE = "Target Support Files/RQNetwork/RQNetwork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/RQNetwork/RQNetwork.modulemap";
 				PRODUCT_MODULE_NAME = RQNetwork;
 				PRODUCT_NAME = RQNetwork;
@@ -802,8 +827,8 @@
 		2211449D5372A7638A07369516CC89C8 /* Build configuration list for PBXNativeTarget "Pods-RQNetwork_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22520290B69E78569EE49DCB5ACA00C9 /* Debug */,
-				C59DC869A054EE5EFB4E47C336FF4754 /* Release */,
+				51C7D9FAA53B2CB60C721DA9A85854A1 /* Debug */,
+				6348127E3BD62F79A363CA7166F8D36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -817,20 +842,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65CBC81BFE35D455992179E509AC6166 /* Build configuration list for PBXNativeTarget "RQNetwork" */ = {
+		9D2A955792D31679B841105D68072EC9 /* Build configuration list for PBXNativeTarget "Pods-RQNetwork_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75AC53B02B05DBC40913F7487D906F98 /* Debug */,
-				FAF2926965FF7590E076DDA26B7C6110 /* Release */,
+				A55EF733CBF672808D8B503FD96B964B /* Debug */,
+				26AB94BAAD2E60211CD3339DC5E2A863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D2A955792D31679B841105D68072EC9 /* Build configuration list for PBXNativeTarget "Pods-RQNetwork_Tests" */ = {
+		B9064A7985A5BBE1293378608A883442 /* Build configuration list for PBXNativeTarget "RQNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A51B99B1795BE715ACFE737C07E7F54D /* Debug */,
-				1FCF38D70642A211E80B6FD8FD4AB39C /* Release */,
+				4810AF13A20C5A0BC370A40FADAFFAE4 /* Debug */,
+				FBEFEC7AEE2FF01AF70B863B9B74F055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
