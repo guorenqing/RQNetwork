@@ -64,13 +64,19 @@ public struct RQSSEAutoReconnectConfig: Sendable {
 // MARK: - 默认实现
 public extension RQSSERequest {
     /// 默认需要权限验证
-    var requiresAuth: Bool { true }
-    
-    /// 默认不使用 mock
-    var useMock: Bool { false }
-    
-    /// 默认开启自动重连
-    var autoReconnect: RQSSEAutoReconnectConfig { .default }
+        var requiresAuth: Bool { true }
+        
+        /// 默认不使用 mock（SSE 不支持 Mock）
+        var useMock: Bool { false }
+        
+        /// 默认开启自动重连
+        var autoReconnect: RQSSEAutoReconnectConfig { .default }
+        
+        /// 默认使用 GET 方法，但可以重写为 POST
+        var method: RQHTTPMethod { .GET }
+        
+        /// SSE 默认使用较长的超时时间
+        var timeoutInterval: TimeInterval? { 300.0 }
 }
 
 /// SSE 客户端
@@ -143,10 +149,42 @@ public final class RQSSEClient: @unchecked Sendable {
     }
     
     /// 连接到 SSE 端点
-    public func connect(
+    public func connect(with request: RQSSERequest) throws {
+        guard let baseURL = RQDomainManager.shared.getDomain(request.domainKey) else {
+            throw RQNetworkError.invalidURL
+        }
+        
+        guard let url = URL(string: baseURL + request.path) else {
+            throw RQNetworkError.invalidURL
+        }
+        
+        // 构建请求头
+        var headers: [String: String] = [:]
+        if let commonHeaders = RQNetworkManager.shared.commonHeadersProvider?() {
+            headers.merge(commonHeaders) { $1 }
+        }
+        if let requestHeaders = request.headers {
+            headers.merge(requestHeaders) { $1 }
+        }
+        
+        connect(
+            to: url,
+            eventHandler: request.eventHandler,
+            headers: headers,
+            method: request.method,
+            body: request.body, // 使用基类的 body
+            autoReconnect: request.autoReconnect,
+            timeoutInterval: request.timeoutInterval // 使用基类的 timeoutInterval
+        )
+    }
+    
+    /// 底层连接方法
+    private func connect(
         to url: URL,
         eventHandler: RQSSEEventHandler,
         headers: [String: String] = [:],
+        method: RQHTTPMethod = .GET,
+        body: Data? = nil,
         autoReconnect: RQSSEAutoReconnectConfig = .default,
         timeoutInterval: TimeInterval? = nil
     ) {
@@ -158,19 +196,28 @@ public final class RQSSEClient: @unchecked Sendable {
         self.currentHeaders = headers
         self.reconnectAttempts = 0
         self.timeoutInterval = timeoutInterval
-        performConnect()
+        
+        performConnect(method: method, body: body)
     }
+
     
-    private func performConnect() {
+    private func performConnect(method: RQHTTPMethod = .GET, body: Data? = nil) {
         guard let url = currentURL else { return }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = method.rawValue
         request.setValue("text/event-stream", forHTTPHeaderField: "Accept")
         request.setValue("no-cache", forHTTPHeaderField: "Cache-Control")
-    
-        // 设置超时时间
         request.timeoutInterval = timeoutInterval ?? Self.defaultTimeoutInterval
+        
+        // 设置请求体（如果是 POST、PUT 等方法）
+        if method != .GET, let body = body {
+            request.httpBody = body
+            // 根据内容类型设置合适的 Content-Type
+            if request.value(forHTTPHeaderField: "Content-Type") == nil {
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            }
+        }
         
         // 添加认证头信息
         for (key, value) in currentHeaders {

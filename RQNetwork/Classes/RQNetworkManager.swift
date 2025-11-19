@@ -498,31 +498,12 @@ public extension RQNetworkManager {
         return RQSSEClient(urlSession: urlSession)
     }
     
+    
+    
     /// 连接到 SSE 流
-    func connectToSSE(
-        _ request: RQNetworkRequest,
-        eventHandler: RQSSEEventHandler
-    ) throws -> RQSSEClient {
-        
-        guard let baseURL = RQDomainManager.shared.getDomain(request.domainKey) else {
-            throw RQNetworkError.invalidURL
-        }
-        
-        guard let url = URL(string: baseURL + request.path) else {
-            throw RQNetworkError.invalidURL
-        }
-        
-        // 构建认证头信息
-        var headers: [String: String] = [:]
-        if let commonHeaders = commonHeadersProvider?() {
-            headers.merge(commonHeaders) { $1 }
-        }
-        if let requestHeaders = request.headers {
-            headers.merge(requestHeaders) { $1 }
-        }
-        
+    func connectToSSE(_ request: RQSSERequest) throws -> RQSSEClient {
         let client = createSSEClient()
-        client.connect(to: url, eventHandler: eventHandler, headers: headers)
+        try client.connect(with: request)
         return client
     }
 }
